@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+      "angular.ng-template",
+      "aaron-bond.better-comments",
+      "biomejs.biome",
+      "antfu.file-nesting"
+  ]
+}

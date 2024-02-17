@@ -1,29 +1,12 @@
-/*
-=========================================================
-* BLK Design System Angular - v1.2.0
-=========================================================
+import { enableProdMode } from '@angular/core'
 
-* Product Page: https://www.creative-tim.com/product/blk-design-system-angular
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
-
-import { enableProdMode } from "@angular/core";
-import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-
-import { AppModule } from "./app/app.module";
-import { environment } from "./environments/environment";
+import { bootstrapApplication } from '@angular/platform-browser'
+import { AppComponent } from './app/app.component'
+import { appConfig } from './app/app.config'
+import { environment } from './environments/environment'
 
 if (environment.production) {
-  enableProdMode();
+  enableProdMode()
 }
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err))

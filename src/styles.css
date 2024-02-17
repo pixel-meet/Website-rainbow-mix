@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add your global component styles here */
+.btn {
+  @apply font-inter;
+  @apply font-semibold;
+  @apply uppercase;
+}
+
+.rbm {
+  color: #e91e63;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    red 6%,
+    #ffc300 45%,
+    #2196f3 76%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
