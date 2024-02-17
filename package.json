@@ -1,6 +1,6 @@
 {
   "name": "rainbowmix",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "engines": {
   },
   "scripts": {
@@ -10,12 +10,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "vitest",
-    "test:cov": "vitest run --coverage",
-    "format": "pnpm dlx @biomejs/biome format --write ./src",
-    "lint": "pnpm dlx @biomejs/biome lint ./src",
-    "lint:fix": "pnpm dlx @biomejs/biome lint --write ./src",
-    "check": "pnpm dlx @biomejs/biome check --apply ./src",
-    "check:all": "pnpm check && pnpm test:cov"
+    "test:cov": "vitest run --coverage"
   },
   "private": true,
   "dependencies": {
