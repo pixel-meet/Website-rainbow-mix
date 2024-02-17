@@ -1,9 +1,7 @@
 {
-  "name": "ng-daisyui",
+  "name": "rainbowmix",
   "version": "0.2.0",
   "engines": {
-    "node": ">=18.19.0 <19.0.0",
-    "pnpm": ">=8.14.3 <9.0.0"
   },
   "scripts": {
     "ng": "ng",
