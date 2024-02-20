@@ -7,7 +7,11 @@
       <p class="font-bold my-12">
         The first Tokenized NFT Aggregator
       </p>
-      <a class="btn btn-link mt-4" href="https://github.com/pixel-meet/Rainbow-mix"> Github Litepaper </a>
+
+      <div class="flex gap-2 mt-4 justify-center">
+        <button class="btn btn-primary" onclick="my_modal_1.showModal()">Explain me like im 5</button>
+        <a class="btn btn-link" href="https://github.com/pixel-meet/Rainbow-mix"> Github </a>
+      </div>
     </div>
   </div>
 </div>
@@ -107,7 +111,7 @@
         </div>
 
         <div class="stat">
-          <div class="stat-title">NFT exchange</div>
+          <div class="stat-title">NFT exchange(Contract Locked)</div>
           <div class="stat-value">4000</div>
         </div>
       </div>
@@ -136,3 +140,45 @@
       </svg>
     </a>
   </div>
+
+  <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+      <h3 class="font-bold text-lg">Rainbow mix!</h3>
+      <p class="py-4 text-left">
+
+        🌈 What is ERC404?<br>
+        The ERC404 standard is designed to consolidate key features in one place, supporting:
+        <br>
+        - Gameification/Gambling<br>
+        - Investment<br>
+        - Tokenization<br>
+        <br>
+        
+        🔍 Why RainbowMix?<br>
+        RainbowMix is not just any token—it's tied directly to existing NFTs/RWAs. Through a unique Over-The-Counter
+        (OTC) mechanism, NFT/RWA owners can offer or receive offers, transferring their assets into the contract in
+        exchange for time-locked RBM tokens.<br><br>
+
+        💡 Benefits for NFT Owners:<br>
+        Owners receive market-priced liquidity, plus additional value based on our manual scoring system.<br><br>
+
+        🎁 Advantages for RBM Holders:<br>
+        Holding RBM tokens gives you a chance to acquire corresponding NFTs entered into the contract. Imagine acquiring
+        a coveted punk or a tokenized Tesla with just one RBM token!<br><br>
+
+        📈 Investing in RBM:<br>
+        Investing in RBM is akin to passively investing in a diversified collection of assets. Consider "beeple" as just
+        one example within our aggregated collection.<br><br>
+
+        💎 Value Proposition:<br>
+        Each NFT within the system has an intrinsic value or the value of RBM, offering a unique investment opportunity.<br><br>
+
+      </p>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close, I love it!</button>
+        </form>
+      </div>
+    </div>
+  </dialog>

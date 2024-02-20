@@ -6,4 +6,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core'
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeroComponent {}
+export class HeroComponent {
+
+  eli5() {
+    
+  }
+}
