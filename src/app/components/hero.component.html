@@ -2,15 +2,27 @@
   <div class="hero-content text-center">
     <div class="max-w-md">
       <h1 class="text-4xl font-bold mb-6">Aggregates different NFTs into an ERC-404</h1>
+
+      <ul class="c-rainbow w-56">
+        <li class="c-rainbow__layer c-rainbow__layer--white">RainbowMix</li>
+        <li class="c-rainbow__layer c-rainbow__layer--orange">RainbowMix</li>
+        <li class="c-rainbow__layer c-rainbow__layer--red">RainbowMix</li>
+        <li class="c-rainbow__layer c-rainbow__layer--violet">RainbowMix</li>
+        <li class="c-rainbow__layer c-rainbow__layer--blue">RainbowMix</li>
+        <li class="c-rainbow__layer c-rainbow__layer--green">RainbowMix</li>
+        <li class="c-rainbow__layer c-rainbow__layer--yellow">RainbowMix</li>
+      </ul>
+
       <img src="/assets/pot.png" alt="Rainbow Mix" class="w-60 mx-auto mt-4 absolute opacity-70">
       <img src="/assets/rbm.png" alt="Rainbow Mix" class="w-72 mx-auto mt-4">
-      <p class="font-bold my-12">
-        The first Tokenized NFT Aggregator
-      </p>
+      <div class="font-bold my-12">
+        The first Tokenized NFT Aggregator<br>
+        <div class="badge badge-neutral mt-2">ERC404 v2 Extension</div>
+      </div>
 
       <div class="flex gap-2 mt-4 justify-center">
         <button class="btn btn-primary" onclick="my_modal_1.showModal()">Explain me like im 5</button>
-        <a class="btn btn-link" href="https://github.com/pixel-meet/Rainbow-mix"> Github </a>
+        <a class="btn btn-link" href="https://github.com/pixel-meet/Rainbow-mix"> Open source </a>
       </div>
     </div>
   </div>
@@ -19,9 +31,12 @@
   <div class="hero-content text-center">
     <div class="max-w-xl">
       <h1 class="text-4xl font-bold mb-4">10000 different NFTs🎯</h1>
-      <p class="font-bold mb-12">
+      <div class="font-bold ">
         Adding various types of NFTs until 10000 is reached
-      </p>
+      </div>
+      <div class="opacity-60">
+        Current <div class="badge badge-neutral mt-4 mb-12"> 0/10000</div>
+      </div>
       <div class="grid grid-cols-2 gap-2">
 
 
@@ -57,7 +72,7 @@
           </div>
         </div>
       </div>
-
+      <div class="badge badge-neutral mt-4">Just for the example - these are not currently set</div>
       <div>
         <p class="font-bold my-12">
           Increasing the value of $RBM through thrilling NFTs over time
@@ -68,10 +83,11 @@
   </div>
 </div>
 
-<div class="hero py-40 bg-base-100">
+<div class="hero py-40 bg-base-100 ">
   <div class="hero-content text-center">
-    <div class="max-w-lg">
+    <div class="max-w-lg relative">
       <h1 class="text-3xl font-bold mb-4">Be Lucky - Win big</h1>
+      <div class='rainbow-wheel'></div>
       <p class="font-bold mb-12 text-sm opacity-50 mt-4">
         By adding NFTs / Token / ERC else bound to $RBM over time, there is a chance that your $RBM token will
         correspond to an rare NFT.
@@ -79,9 +95,8 @@
         <br> <span class="mt-12 text-2xl"> Hold, sit back, relax and enjoy. </span>
       </p>
 
-      <img src="/assets/pepfly.png" alt="Rainbow Mix" class="w-72 mx-auto mt-4"
-        style="border:5px solid white; border-radius:20px">
-      <br> <span class="mt-12 text-2xl"> Doing our best to raise. </span>
+      <img src="/assets/sloth.png" alt="Rainbow Mix" class="w-72 mx-auto mt-4">
+      <br> <span class="mt-12 text-2xl opacity-40"> Only up from here </span>
 
     </div>
 
@@ -91,11 +106,25 @@
 <div class="hero py-40 bg-base-300">
   <div class="hero-content text-center">
     <div class="max-w-lg">
-      <h1 class="text-3xl font-bold mb-4">Exchange your NFT for $RBM</h1>
+      <h1 class="text-2xl font-bold mb-4 opacity-75">Exchange your NFT for $RBM</h1>
+      <h1 class="text-4xl font-bold mb-4">Wanted NFTs</h1>
+
+      <div class="grid grid-cols-2 gap-2">
+        <div class="card w-full h-full  overflow-hidden">
+          <img src="/assets/azuki.jpg" alt="Shoes" />
+        </div>
+        <div class="card w-full h-full bg-base-100 shadow-xl overflow-hidden image-full">
+          <div class="card-body justify-center content-center text-center">
+            <h2 class="card-title            text-center text-cyan-500 min-w-full flex-1"> </h2>
+            <p class="font-bold text-4xl ">?</p>
+          </div>
+        </div>
+      </div>
+
       <button class="btn btn-disabled mt-4"> Exchange app coming </button>
       <p class="font-bold mb-12 text-sm opacity-50 mt-4">
         You want to exchange your NFT for $RMB now?
-        <br>Write us on X or Telegram - We added the OTC exchange into our contract already.
+        <br>Write us on X or Telegram - We added a OTC swap into our RBM contract already!
       </p>
 
       <br>
@@ -114,9 +143,13 @@
         </div>
 
         <div class="stat">
-          <div class="stat-title">NFT exchange(Contract Locked)</div>
+          <div class="stat-title">NFT exchange*</div>
           <div class="stat-value">4000</div>
         </div>
+      </div>
+      <br>
+      <div class="opacity-35 text-right">
+        <small>*not minted on TGE</small>
       </div>
     </div>
 
@@ -161,18 +194,23 @@
         In a nutshell : A base token bound directly to existing NFTs/RWAs/Tokens. <br>
         Protecting these bounded entities from devaluation and rising the base floor.<br><br>
         In addition:
-        Through a unique Over-The-Counter (OTC) mechanism, owners can offer or receive offers, transferring their assets
-        into the contract in exchange for RBM tokens.<br><br>
+        Through a unique Over-The-Counter (OTC) mechanism, owners can offer or receive offers, transferring their
+        assets into the contract in exchange for RBM tokens, at the start of the contract, 0 NFTs are bound to a RBM
+        token. <br>
+        We are adding NFTs over time, and trying to increase the value of the RBM token by doing so. <br>
+        <br><br>
 
         💡 Benefits for NFT Owners:<br>
         Owners receive market-priced liquidity, plus additional value based on our manual scoring system.<br><br>
 
         🎁 Advantages for RBM Holders:<br>
-        Holding RBM tokens gives you a chance to acquire corresponding NFTs entered into the contract. Imagine acquiring
+        Holding RBM tokens gives you a chance to acquire corresponding NFTs entered into the contract. Imagine
+        acquiring
         a punk or a tokenized Tesla with just one RBM token<br><br>
 
         📈 Investing in RBM:<br>
-        Investing in RBM means passively investing in a diversified collection of assets. Consider "beeple" as just
+        Investing in RBM means passively investing in a diversified collection of assets. Consider "beeple" as
+        just
         one example within our aggregated collection.<br><br>
 
         💎 Value Proposition:<br>
