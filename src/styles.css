@@ -49,6 +49,7 @@
   list-style: none;
   padding: 0;
   margin-left: 65px;
+  width: 20rem;
 }
 .c-rainbow__layer {
   --text-color: var(--color-foreground);
